@@ -1,1 +1,219 @@
-Portfolio placeholder
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goh Che Seng's Portfolio</title>
+
+  <!-- Styling -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/index.css">
+
+  <!-- Scripts -->
+  <script src="projects_data.js" defer></script>
+  <script src="index.js" defer></script>
+
+</head>
+<body>
+
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center">
+      <a href="#" class="w3-bar-item w3-button   w3-hover-black" onclick="closeNav()">Home</a>
+      <a href="#about" class="w3-bar-item w3-button   w3-hover-black" onclick="closeNav()">About</a>
+      <a href="#portfolio" class="w3-bar-item w3-button   w3-hover-black" onclick="closeNav()">Portfolio</a>
+      <a href="#past-experiences" class="w3-bar-item w3-button   w3-hover-black" onclick="closeNav()">Experience</a>
+      <a href="#contact" class="w3-bar-item w3-button   w3-hover-black" onclick="closeNav()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="w3-main w3-padding-large">
+
+    <!-- Menu icon to open sidebar -->
+    <span class="w3-button w3-top w3-white w3-xxlarge   w3-hover-text-black nav-icon" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+    <!-- Header -->
+    <header class="w3-container w3-center airforce-bg portfolio-header" id="home">
+      <img src="images/dad_from_linkedin.jpg" class="cover-image" />
+      <div class="">
+        <h1 class="w3-jumbo white-color"><b>Stewart Goh</b></h1>
+        <h3 class="white-color">Senior Principal Engineer</h3>
+        <div class="button-group">
+          <!-- TODO: resume file here -->
+          <a href="files/#" download>
+            <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+                <i class="fa fa-download small-margin-right"></i> Download CV
+            </button>
+          </a>
+          <!-- TODO: resume file here too -->
+          <a href="files/#" target="_blank">
+            <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+                <i class="fa fa-external-link small-margin-right"></i> Preview CV
+            </button>
+          </a>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- About Section -->
+    <section class="w3-content w3-justify w3-padding-32 larger-top-spacing card" id="about">
+      <h2>About</h2>
+      <hr class="w3-opacity">
+      <!-- TODO: Edit this with more content -->
+      <p class="placeholder">
+        Centre Head, Networked Systems Centre, AELD-RSAF
+      </p>
+    </section>
+
+    <section class="w3-content w3-justify w3-padding-32 card" id="skills">
+      <h2 class="">My Skills</h2>
+      <hr class="w3-opacity">
+      <div class="skills-list">
+        <article>
+          <ul>
+            <li>Defense</li>
+            <li>Systems Engineering</li>
+            <li>Network Engineering</li>
+            <li>Computer Network Operations</li>
+            <li>Military Operations</li>
+          </ul>
+        </article>
+        <article>
+          <ul>
+            <li>Program Management</li>
+            <li>Project Management</li>
+            <li>Project Planning</li>
+          </ul>
+        </article>
+      </div>
+      <br>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="w3-padding-32 w3-content card" id="portfolio">
+      <h2 class="">Portfolio and past projects</h2>
+      <hr class="w3-opacity">
+
+      <!-- Grid for projects and papers -->
+      <div class="projects-area" style="margin:0 -16px" id="projects-area">
+      <!-- End grid -->
+      </div>
+    <!-- End Portfolio Section -->
+    </section>
+
+    <!-- Past Experiences -->
+    <section class="w3-padding-32 w3-content card" id="past-experiences">
+      <h2 class="">Experience</h3>
+      <hr class="w3-opacity">
+
+      <article>
+        <img src="/images/rsaf_logo.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p class="card-description">
+          <b class="w3-large w3-text-black w3-margin-right">
+            Senior Principal Engineer
+          </b> 
+          <span>Jul 2019 – Present</span> <span class="separated-bullet" id="experience-2"></span>
+        </p>
+        <p class="card-sub-desc">
+          Republic of Singapore Air Force
+          <br>
+          ---
+          <br>
+          Senior Principal Engineer heading the Networked Systems Centre in Air Engineering & Logistics Department
+        </p>
+        <br>  
+      </article>
+
+      <article>
+        <img src="/images/mindef_logo.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p class="card-description">
+          <b class="w3-large w3-text-black w3-margin-right">
+            Principal Engineer, Networked Systems
+          </b> 
+          <span>Aug 2010 – Present</span> <span class="separated-bullet" id="experience-1"></span>
+        </p>
+
+        <p class="card-sub-desc">
+          Ministry of Defence
+        </p>
+        <br>  
+      </article>
+    </section>
+
+    <!-- Past Education -->
+    <section class="w3-padding-32 w3-content card" id="education">
+      <h2 class="">Education</h3>
+      <hr class="w3-opacity">
+
+      <article>
+        <img src="/images/naval_postgrad_school_logo.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p class="card-description">
+          <b class="w3-large w3-text-black w3-margin-right">
+            The United States Naval Postgraduate School
+          </b> 
+          <span>2002 - 2004</span>
+        </p>
+        <p class="card-sub-desc">
+          Master of Science (MSc), Systems Engineering
+        </p>
+        <br>  
+      </article>
+
+      <article>
+        <img src="/images/ntu-logo.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p class="card-description">
+          <b class="w3-large w3-text-black w3-margin-right">
+            Nanyang Technological University
+          </b> 
+          <span>1995 - 1998</span>
+        </p>
+        <p class="card-sub-desc">
+          Bachelor of Engineering (BEng), Electrical and Electronics Engineering, First Class Honours.
+        </p>
+        <br>  
+      </article>
+      
+    </section>
+      
+
+    <!-- Contact Section -->
+    <div class="w3-padding-32 w3-content card" id="contact" style="margin-bottom:64px">
+      <h2>Contact Me</h2>
+      <hr class="w3-opacity">
+
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Singapore</p>
+        <!-- TODO: Decide if want to place phone number here, else just remove -->
+        <p class="placeholder"><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>+00 12345</p>
+        <!-- TODO: Similarly decide if want to add contact email here, else just remove -->
+        <p class="placeholder"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+        <p>
+          <i class="fa fa-linkedin fa-fw w3-xxlarge w3-margin-right"></i>
+          <a href="https://www.linkedin.com/in/che-seng-goh-2b2a1b18/">
+            https://www.linkedin.com/in/che-seng-goh-2b2a1b18/
+          </a>
+        </p>
+      </div>
+      
+    <!-- End Contact Section -->
+    </div>  
+    
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">    
+    <!-- End footer -->
+    </footer>
+    
+  <!-- END PAGE CONTENT -->
+  </div>
+</body>
+</html>
